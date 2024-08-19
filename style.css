@@ -1,0 +1,90 @@
+:root {
+    --main-orange: rgb(46, 44, 54);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    color: var(--main-orange);
+}
+
+.todo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1ece4a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.todo-input {
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+
+
+}
+
+.todo-input:focus {
+    outline: none;
+}
+#add-task-btn {
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--main-orange);
+    color: #fff;
+}
+
+.todo-list {
+    list-style-type:none;
+    padding: 0;
+    text-align: left;
+
+}
+
+
+.todo-item {
+    text-align: left;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 7px;
+    margin-bottom: 5px;
+
+
+}
+
+.todo-item span {
+    margin-left: 10px;
+    flex-grow: 1; /* Занимает доступное пространство */
+    text-align: left; /* Текст внутри элемента выравнивается по левому краю */
+    word-wrap: break-word; /* Переносит слова при необходимости */
+}
+
+.delete-btn {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--main-orange);
+    color: #fff;
+}
+
+.todo-item.completed {
+    text-decoration: line-through 2px var(--main-orange);
+    opacity: 0.7;
+}
